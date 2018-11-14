@@ -1,0 +1,203 @@
+@import 'fox-reboot.css';
+@import 'fonts.css';
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font: 400 14px/1.4 'Montserrat', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: bold;
+  color: #222;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 19;
+}
+.flex {
+  display: -o-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+.align-center {
+  align-items: center;
+  -webkit-align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.column {
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+}
+.text-center {
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+}
+.header {
+  margin-top: 45px;
+  margin-bottom: 125px;
+}
+.logo {
+  font-size: 26px;
+  font-family: 'Wisdom Script', serif;
+  color: #fed136;
+  letter-spacing: 1.3px;
+}
+.nav-link {
+  margin-left: 40px;
+  color: #222;
+  text-transform: uppercase;
+}
+.nav-link:hover {
+  color: #fed136;
+}
+.nav-link:first-child {
+  margin-left: 0;
+}
+.services-header {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.services-title {
+  display: inline-block;
+  color: #777;
+  margin-bottom: 80px;
+  font-family: 'Droid Serif', serif;
+  font-style: italic;
+}
+.item-image {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 25px;
+}
+.item-header {
+  font-size: 18px;
+  letter-spacing: -0.45px;
+  margin-bottom: 15px;
+}
+.item-description {
+  width: 275px;
+  font-family: 'Roboto Slab', serif;
+  color: #777;
+  letter-spacing: -0.35px;
+  margin-bottom: 120px;
+}
+.contact {
+  position: relative;
+  background-color: #222;
+  padding: 110px 0;
+  text-align: center;
+}
+.contact::before {
+  content: '';
+  width: 614px;
+  height: 537px;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url("../images/map.png") no-repeat no-repeat;
+}
+.contact-header {
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+.contact-title {
+  display: inline-block;
+  color: #777;
+  margin-bottom: 80px;
+  font-family: 'Droid Serif', serif;
+  font-style: italic;
+}
+.form-blocks {
+  margin-bottom: 30px;
+}
+.right-form,
+.left-form {
+  width: 50%;
+}
+.left-form {
+  margin-right: 30px;
+}
+.form-input {
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+.form-input:last-child {
+  margin-bottom: 0;
+}
+.form-message {
+  resize: none;
+  height: 100%;
+}
+.form-input,
+.form-message {
+  color: #bbb;
+  width: 100%;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: -0.35px;
+  font-weight: bold;
+  padding: 20px;
+}
+.form-input:invalid,
+.form-message:invalid,
+.form-input:valid,
+.form-message:valid {
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.form-input:invalid,
+.form-message:invalid {
+  border: 3px solid #ed2939;
+}
+.form-input:valid,
+.form-message:valid {
+  border: 3px solid #2bb154;
+}
+.submit {
+  width: 240px;
+  padding: 25px 45px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #fed136;
+  font-size: 18px;
+  border: none;
+  margin: 0 auto;
+}
+.form-input,
+.form-message,
+.submit {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}

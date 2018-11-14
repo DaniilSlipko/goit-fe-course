@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'Pe-icon-7-stroke';
+    src: url('fonts/Pe-icon-7-stroke.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    width: 1600px;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 32px;
+    max-width: 1120px;
+}
+
+header .logo,
+header nav {
+    width: 49.8%;
+    display: inline-block;
+}
+
+header nav {
+    text-align: right;
+    vertical-align: top;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+header nav li a:hover {
+    color: #1abc9c;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #0f0101;
+}
+
+.logo a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #555252;
+}
+
+.logo::first-letter {
+    font-weight: 900;
+    color: #1abc9c;
+}
+
+.slider {
+    width: 1600px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgb(0, 0, 0);
+        opacity: 0.52;
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    z-index: 5;
+}
+
+.slides {
+    list-style: none;
+}
+
+.slide {
+    border: none;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slide-headline {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(225, 225, 225);
+    z-index: 10;
+    top: 205px;
+    left: 430px;
+}
+
+.slide-headline::first-line {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.slider .ctrl {
+    font-family: 'Pe-icon-7-stroke';
+    font-size: 100px;
+    width: 104px;
+    height: 104px;
+    border: none;
+    background-color: rgba(26, 188, 156, 0.65);
+    text-align: center;
+    position: absolute;
+    top: 224px;
+    z-index: 50;
+    color: white;
+}
+
+.ctrl-prev {
+    left: 245px;
+}
+
+.ctrl-next {
+    right: 245px;
+}
+
+.headline h1 {
+    margin-top: 100px;
+    margin-bottom: 120px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #515151;
+    text-align: center;
+    position: relative;
+}
+
+.headline h1::after {
+    content: "";
+    background-color: #1abc9c;
+    width: 164px;
+    height: 7px;
+    position: absolute;
+    margin-top: 85px;
+    margin-left: -283px;
+}
+
+.wrapper {
+    margin-bottom: 100px;
+    margin-left: 225px;
+}
+
+.wrapper .card:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.wrapper .card:nth-child(4n+4) {
+    margin-right: 0;
+}
+
+.card {
+    width: 255px;
+    height: 322px;
+    display: inline-block;
+    margin: 15px;
+}
+
+.card-overlay {
+    display: none;
+    width: 100%;
+    height: 283px;
+    border-width: 10px;
+    border-color: rgba(255, 255, 255, 0.549);
+    border-style: solid;
+    background-color: rgba(0, 0, 0, .549);
+    background-clip: padding-box;
+}
+
+.card:hover .card-overlay {
+    display: block;
+}
+
+.buttons {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.o-button {
+    margin: 3px;
+    font-family: 'Pe-icon-7-stroke';
+    font-size: 30px;
+    color: #ffffff;
+    background: transparent;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+
+.o-button:hover {
+    border: none;
+    background-color: #1abc9c;
+}
+
+.cart {
+    font-family: 'Pe-icon-7-stroke';
+    width: 164px;
+    height: 48px;
+    background-color: rgb(50, 50, 50);
+}
+
+.cart-text {
+    position: absolute;
+    top: 66px;
+    left: 13px;
+}
+
+.add-to-cart_text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 71px;
+    right: 20px;
+}
+
+.card:hover .description .name {
+    background: #1abc9c;
+    transition: all 0.2s ease-in;
+}
+
+.card:hover .description .price {
+    background: #7fd9c7;
+    transition: all 0.2s ease-in;
+}
+
+.card .photo {
+    height: 283px;
+    width: 255px;
+    position: relative;
+}
+
+.card .photo img {
+    position: absolute;
+    object-fit: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.description .name,
+.description .price {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: 0.2s ease-in;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.description .price {
+    width: 55px;
+    height: 36.5px;
+    /*   white-space: nowrap; */
+    text-align: center;
+    background: #8c8c8c;
+    color: #fff;
+    float: right;
+}
+
+.description .name {
+    width: 200px;
+    /*   white-space: nowrap; */
+    background: #323232;
+    color: #fff;
+    float: left;
+}
+
+footer {
+    background-color: #323232;
+    width: 1600px;
+    height: 88px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(254, 254, 254);
+    text-align: center;
+    position: absolute;
+    top: 38px;
+    left: 645px;
+    margin-bottom: 0;
+}
+
+.footer-text-last-word {
+    color: #46bfa9;
+}
