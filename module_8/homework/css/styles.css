@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.promo{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    height: 550px;
+    background: url("../img/bg-header.png") no-repeat;
+    background-size: cover;
+}
+.menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    
+    
+    
+}
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 18px;
+    margin: 0 7px;
+    
+    
+    
+}
+.menu li {
+    display: inline;
+    
+}
+
